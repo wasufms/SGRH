@@ -11,19 +11,13 @@ medição do volume e qualidade da água entregue; assinatura para confirmação
 
 Esta Implementação de Referência consiste dos seguintes módulos: 
 
-Módulo Nó: 
-Instalado na cisterna do Beneficiário e implementado em C. Sua principal função é assinar e verificar os
+<b>Módulo Nó: </b> Instalado na cisterna do Beneficiário e implementado em C. Sua principal função é assinar e verificar os
 pacotes recebidos, bem como controlar os sensores usados para medir o volume e a pureza da água recebida.
 
-Módulo Gateway: 
-Instalado no smartphone do Pipeiro, implementado em Java para Android. A função principal deste módulo é realizar a
-comunicação entre o Nó e o Context Broker, servindo como um gateway móvel.
+<b>Módulo Gateway: </b> Instalado no smartphone do Pipeiro, implementado em Java para Android. A função principal deste módulo é realizar a comunicação entre o Nó e o Context Broker, servindo como um gateway móvel.
 
-Plataforma de mediação de dados IoT - FIWARE
-Deve gozar das características de um ambiente de Computação em Nuvem como elasticidade, umbiquidade, escalabilidade, acesso amplo via rede e segurança. Nesta implementação foi usado o FIWARE. 
+<b>Plataforma de mediação de dados IoT - FIWARE : </b> Deve gozar das características de um ambiente de Computação em Nuvem como elasticidade, umbiquidade, escalabilidade, acesso amplo via rede e segurança. Nesta implementação foi usado o FIWARE. 
 
-Módulo Proxy: 
-Instalado na Plataforma IoT (FIWARE), implementado em Java e é responsável pela criação do Token para autorização da comunicação do Gateway com o Nó e verificação do Pacote de Recebimento.
+<b>Módulo Proxy: </b> Instalado na Plataforma IoT (FIWARE), implementado em Java e é responsável pela criação do Token para autorização da comunicação do Gateway com o Nó e verificação do Pacote de Recebimento.
 
-Módulo Context Broker
-Implementação do Padrão Arquitetural Publish/Subscribe. Instalado na Plataforma IoT (FIWARE) e é o responsável pela orquestração das mensagens trocadas com a AS e atualização do contexto da aplicação.
+<b> Módulo Context Broker </b> Implementação do Padrão Arquitetural Publish/Subscribe. Instalado na Plataforma IoT (FIWARE) e é o responsável pela orquestração das mensagens trocadas com a AS e atualização do contexto da aplicação.
