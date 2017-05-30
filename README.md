@@ -10,8 +10,7 @@ medição do volume e qualidade da água entregue; assinatura para confirmação
 
 Esta Implementação de Referência consiste dos seguintes módulos: 
 
-<b>Módulo Nó: </b> Instalado na cisterna do Beneficiário e implementado em C. Sua principal função é assinar e verificar os
-pacotes recebidos, bem como controlar os sensores usados para medir o volume e a pureza da água recebida.
+<b>Módulo Nó: </b> Instalado em um Arduino na cisterna do Beneficiário e implementado na linguagem C. Sua principal função é assinar e verificar os pacotes recebidos, bem como controlar os sensores usados para medir o volume e a pureza da água recebida.
 
 <b>Módulo Gateway: </b> Instalado no smartphone do Pipeiro, implementado em Java para Android. A função principal deste módulo é realizar a comunicação entre o Nó e o Context Broker, servindo como um gateway móvel.
 
