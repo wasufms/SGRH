@@ -16,8 +16,8 @@ pacotes recebidos, bem como controlar os sensores usados para medir o volume e a
 
 <b>Módulo Gateway: </b> Instalado no smartphone do Pipeiro, implementado em Java para Android. A função principal deste módulo é realizar a comunicação entre o Nó e o Context Broker, servindo como um gateway móvel.
 
-<b>Plataforma de mediação de dados IoT - FIWARE : </b> Deve gozar das características de um ambiente de Computação em Nuvem como elasticidade, umbiquidade, escalabilidade, acesso amplo via rede e segurança. Nesta implementação foi usado o FIWARE. 
+<b>Plataforma de mediação de dados IoT - FIWARE : </b> Deve gozar das características de um ambiente de Computação em Nuvem como elasticidade, umbiquidade, escalabilidade, acesso amplo via rede e segurança. Nesta implementação foi usado o <a href="https://www.fiware.org/" target="_blank">FIWARE</a>. O FIWARE é uma plataforma genérica e extensível para serviços da Internet do Futuro por meio de um conjunto de especificações abertas, disponibilizadas por APIs e implementadas em componentes denominados habilitadores genéricos (Generic Enablers, GEs)
 
 <b>Módulo Proxy: </b> Instalado na Plataforma IoT (FIWARE), implementado em Java e é responsável pela criação do Token para autorização da comunicação do Gateway com o Nó e verificação do Pacote de Recebimento.
 
-<b> Módulo Context Broker </b> Implementação do Padrão Arquitetural Publish/Subscribe. Instalado na Plataforma IoT (FIWARE) e é o responsável pela orquestração das mensagens trocadas com a AS e atualização do contexto da aplicação.
+<b> Módulo Context Broker </b> Implementação do Padrão Arquitetural Publish/Subscribe. Instalado na Plataforma IoT FIWARE (GE: Orion Context Broker), é o responsável pela orquestração das mensagens trocadas com a AS e atualização do contexto da aplicação. Neste repositório estão os arquivos json para criação das Entidades da aplicação.
