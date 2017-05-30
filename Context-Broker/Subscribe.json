@@ -1,0 +1,27 @@
+{
+  "description": "Uma Assinatura para notificar o proxy - 2",
+  "subject": {
+    "entities": [
+      {
+       "idPattern": ".*",
+        "type": "Entrega"
+      }
+    ],
+    "condition": {
+      "attrs": [
+        "acaoProxy"
+      ]
+    }
+  },
+  "notification": {
+    "http": {
+      "url": "http://localhost/cisternas/ProxyServlet"
+    },
+    "attrs": [
+      "acaoProxy",
+      "id"
+    ]
+  },
+  "expires": "2040-01-01T14:00:00.00Z",
+  "throttling": 5
+}

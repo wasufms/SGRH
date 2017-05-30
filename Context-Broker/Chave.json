@@ -1,0 +1,17 @@
+{
+  "contextElements": [
+    {
+      "type": "Chave",
+      "isPattern": "false",
+      "id": "123-321",
+      "attributes" : [
+          {
+            "name" : "publicKey",
+            "type" : "String",
+            "value" : "d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511a"
+          }
+        ]
+    }
+  ],
+  "updateAction": "APPEND"
+}

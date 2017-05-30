@@ -1,0 +1,27 @@
+{
+  "contextElements": [
+    {
+      "type": "Manancial",
+      "isPattern": "false",
+      "id": "1",
+      "attributes" : [
+          {
+            "name" : "position",
+            "type" : "String",
+            "value" : "-8.0528339,-34.9165064"
+          },
+          {
+            "name" : "nome",
+            "type" : "String",
+            "value" : "Manancial Agua Boa"
+          },
+          {
+            "name" : "outro",
+            "type" : "String",
+            "value" : ""
+          }
+        ]
+    }
+  ],
+  "updateAction": "APPEND"
+}

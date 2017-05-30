@@ -1,0 +1,52 @@
+{
+  "contextElements": [
+    {
+      "type": "Cisterna",
+      "isPattern": "false",
+      "id": "123-321",
+      "attributes" : [
+          {
+            "name" : "altura",
+            "type" : "float",
+            "value" : "220.0"
+          },
+          {
+            "name" : "areaBase",
+            "type" : "float",
+            "value" : "80384.0"
+          },
+          {
+            "name" : "capacidade",
+            "type" : "float",
+            "value" : "16000.0"
+          },
+          {
+            "name" : "distancia",
+            "type" : "float",
+            "value" : "100.0"
+          },
+          {
+            "name" : "position",
+            "type" : "geo:point",
+            "value" : "-8.055861, -34.951083"
+          },
+          {
+            "name" : "raio",
+            "type" : "float",
+            "value" : "160"
+          },
+          {
+            "name" : "volume",
+            "type" : "float",
+            "value" : "5.0"
+          },
+          {
+            "name" : "outro",
+            "type" : "String",
+            "value" : "98:D3:31:40:87:C7"
+          }
+        ]
+    }
+  ],
+  "updateAction": "APPEND"
+}
