@@ -1,0 +1,69 @@
+import javax.xml.bind.DatatypeConverter;
+
+import com.google.gson.Gson;
+
+import ed25519.ed25519;
+import model.Chave;
+import services.ChaveService;
+import util.Config;
+import util.Print;
+
+public class Testes {
+
+static final String HEXES = "0123456789abcdef";
+	
+	public static String getHex( byte [] raw ) {
+		if ( raw == null ) {
+			return null;
+		}
+		final StringBuilder hex = new StringBuilder( 2 * raw.length );
+		for ( final byte b : raw ) {
+	    	hex.append(HEXES.charAt((b & 0xF0) >> 4))
+	    	.append(HEXES.charAt((b & 0x0F)));
+		}
+		return hex.toString();
+	}
+	  
+	public static void main(String[] args) {
+		//byte[] sk = new byte[]{(byte)0x9d,(byte)0x61,(byte) 0xb1, (byte)0x9d,(byte) 0xef,(byte) 0xfd,(byte) 0x5a, (byte)0x60,(byte)0xba,(byte) 0x84,(byte) 0x4a,(byte) 0xf4,(byte) 0x92,(byte) 0xec,(byte) 0x2c,(byte) 0xc4,(byte)0x44,(byte) 0x49,(byte) 0xc5,(byte) 0x69,(byte) 0x7b, (byte)0x32,(byte) 0x69,(byte) 0x19,(byte)0x70, (byte)0x3b,(byte) 0xac, (byte)0x03,(byte) 0x1c, (byte)0xae, (byte)0x7f,(byte) 0x60};
+		//byte []sk=new byte[32];
+		//Arrays.fill(sk, (byte)0);
+		
+		
+		byte[] pk =new byte[]{(byte)0xd7, (byte)0x5a, (byte)0x98, (byte)0x01, (byte)0x82, (byte)0xb1, (byte)0x0a,(byte) 0xb7,
+				(byte) 0xd5,(byte) 0x4b,(byte) 0xfe, (byte)0xd3, (byte)0xc9,(byte) 0x64,(byte) 0x07, (byte)0x3a,
+				(byte)0x0e, (byte)0xe1,(byte) 0x72,(byte) 0xf3,(byte) 0xda,(byte) 0xa6,(byte) 0x23,(byte) 0x25,
+				(byte)0xaf,(byte) 0x02,(byte) 0x1a,(byte) 0x68,(byte) 0xf7, (byte)0x07, (byte)0x51,(byte) 0x1a};
+			
+		
+		
+	
+		System.out.println("publickey for 0 is \"" + getHex(pk) + "\"");
+
+
+		byte[] message = "nao".getBytes();
+		
+		byte[] signature =new byte []{
+				(byte)0xE4,(byte)0x6F,(byte)0xC7,(byte)0x3E,(byte)0x03,(byte)0xDC,
+				(byte)0x07,(byte)0x82,(byte)0x7F,(byte)0x23,(byte)0x3C,(byte)0x6E,
+				(byte)0xB1,(byte)0xFF,(byte)0xEA,(byte)0x65,(byte)0xE2,(byte)0x49,
+				(byte)0xD6,(byte)0x20,(byte)0xEC,(byte)0x47,(byte)0x46,(byte)0x28,
+				(byte)0x8D,(byte)0xE7,(byte)0x47,(byte)0x31,(byte)0xE7,(byte)0xA2,
+				(byte)0x58,(byte)0x6F,(byte)0x5E,(byte)0x28,(byte)0x89,(byte)0xE5,
+				(byte)0x6C,(byte)0x51,(byte)0xFA,(byte)0x62,(byte)0xBE,(byte)0xA8,
+				(byte)0x3B,(byte)0x27,(byte)0xB9,(byte)0xA6,(byte)0x05,(byte)0x52,
+				(byte)0x93,(byte)0xEA,(byte)0xE7,(byte)0xAF,(byte)0x0D,(byte)0xE6,
+				(byte)0x7B,(byte)0xE2,(byte)0x72,(byte)0x3D,(byte)0x95,(byte)0x8E,
+				(byte)0x4B,(byte)0xDF,(byte)0xFA,(byte)0x01,	
+				
+		};
+		try {
+			
+			System.out.println("check signature result:\n"+ed25519.checkvalid(signature,message,pk));
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

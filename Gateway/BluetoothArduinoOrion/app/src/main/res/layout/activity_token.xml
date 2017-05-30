@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.was.controller.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/progressHoriz"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressHoriz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Aguardando Token...\n Isso pode demorar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <TextView
+        android:id="@+id/txtEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo"
+
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/txtProgressBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <TextView
+        android:id="@+id/txtToken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:text="Token Recebido"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="69dp"
+        android:layout_alignBottom="@+id/btnIniciarDeslocamento"
+        android:layout_alignLeft="@+id/txtProgressBar"
+        android:layout_alignStart="@+id/txtProgressBar" />
+
+    <Button
+        android:id="@+id/btnIniciarDeslocamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtToken"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtToken"
+        android:layout_marginBottom="96dp"
+        android:text="Iniciar Deslocamento" />
+
+
+
+
+</RelativeLayout>

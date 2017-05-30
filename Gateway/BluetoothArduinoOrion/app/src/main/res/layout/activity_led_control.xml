@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.was.led.ledControl">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/controle_led"
+        android:id="@+id/txtViewLED"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Valor do Arduino: "
+        android:id="@+id/txtViewRetornoArduino"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Token: aguardando autorização"
+        android:id="@+id/txtResposta"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtViewRetornoArduino"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entregar sem TOKEN"
+        android:id="@+id/btnLigarLED"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtViewLED"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parar a entrega"
+        android:id="@+id/btnDesligarLED"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/btnLigarLED"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btnLigarLED"
+        android:layout_alignEnd="@+id/btnLigarLED"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desconectar"
+        android:id="@+id/btnDesconectar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rec_dados"
+        android:id="@+id/btnReceberDados"
+        android:layout_above="@+id/txtViewRetornoArduino"
+        android:layout_toRightOf="@+id/txtViewLED"
+        android:layout_toEndOf="@+id/txtViewLED" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enviar_orion"
+        android:id="@+id/btnEnviarOrion"
+        android:layout_below="@+id/txtResposta"
+        android:layout_alignLeft="@+id/btnReceberDados"
+        android:layout_alignStart="@+id/btnReceberDados"
+        android:layout_marginTop="36dp" />
+</RelativeLayout>

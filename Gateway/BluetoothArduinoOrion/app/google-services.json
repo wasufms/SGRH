@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "621460605483",
+    "firebase_url": "https://ardent-oven-145414.firebaseio.com",
+    "project_id": "ardent-oven-145414",
+    "storage_bucket": "ardent-oven-145414.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621460605483:android:9a094e0b5d710d85",
+        "android_client_info": {
+          "package_name": "android.dominando.hotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621460605483-tpjmq0emdc92vf3skjvhonkr1iliicsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb44L7yYyZBpTA1vwk5cW-aDLApbV2qHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621460605483:android:f8a56471a164e383",
+        "android_client_info": {
+          "package_name": "activity.android.dominando.hotel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621460605483-tpjmq0emdc92vf3skjvhonkr1iliicsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb44L7yYyZBpTA1vwk5cW-aDLApbV2qHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621460605483:android:5920de3503a2d18c",
+        "android_client_info": {
+          "package_name": "com.google.firebase.quickstart.fcm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621460605483-tpjmq0emdc92vf3skjvhonkr1iliicsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb44L7yYyZBpTA1vwk5cW-aDLApbV2qHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621460605483:android:0a4c4183980e7dfa",
+        "android_client_info": {
+          "package_name": "com.was.led"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "621460605483-tpjmq0emdc92vf3skjvhonkr1iliicsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb44L7yYyZBpTA1vwk5cW-aDLApbV2qHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
